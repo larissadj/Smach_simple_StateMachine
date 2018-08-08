@@ -1,0 +1,15 @@
+<launch>
+
+  <node pkg="smach_mavros_ardusub_test" type="heading_to_service.py"
+    name="heading_to_serviceServer" output = "screen"></node>
+
+  <node pkg="smach_mavros_ardusub_test" type="save_heading_service.py"
+    name="save_heading_ServiceServer" output = "screen"></node>
+
+  <node pkg="smach_mavros_ardusub_test" type="heading_to_saved_service.py"
+    name="heading_to_savedserviceServer" output = "screen"></node>
+
+  <node pkg="smach_mavros_ardusub_test" type="move_square_service.py"
+    name="move_squareService" output = "screen"></node>
+
+</launch>
